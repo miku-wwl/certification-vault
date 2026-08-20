@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Weilai Wang's cloud, Kubernetes, and platform engineering certifications.">
+  <title>Certification Vault · Weilai Wang</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./site.css">
+  <style>
+    .vault-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.9rem; }
+    .credential { display: grid; grid-template-columns: 68px minmax(0, 1fr) auto; align-items: center; gap: 0.9rem; min-height: 100px; padding: 0.85rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--bg-elev); color: var(--text); text-decoration: none; transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease; }
+    .credential:hover { color: var(--text); text-decoration: none; border-color: var(--blue); box-shadow: 0 0 0 1px var(--blue), 0 14px 30px var(--blue-soft); transform: translateY(-3px); }
+    .credential img { width: 68px; height: 68px; object-fit: contain; border-radius: 10px; background: var(--surface-2); }
+    .credential strong { display: block; line-height: 1.3; }
+    .issuer { display: block; margin-top: 0.3rem; color: var(--muted); font: 0.73rem var(--mono); }
+    .credential-arrow { color: var(--blue); font: 700 1.2rem var(--mono); }
+    .award { margin-bottom: 1rem; padding: 1rem 1.15rem; border: 1px solid var(--green); border-radius: var(--radius); background: var(--green-soft); }
+    .award strong { font-family: var(--mono); }
+    .award p { margin: 0.3rem 0 0; color: var(--muted); }
+    @media (max-width: 760px) { .vault-grid { grid-template-columns: 1fr; } }
+    @media (max-width: 420px) { .credential { grid-template-columns: 54px minmax(0, 1fr) auto; } .credential img { width: 54px; height: 54px; } }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-shell header-inner">
+      <a class="brand" href="https://miku-wwl.github.io/" aria-label="Back to Weilai Wang's main hub"><span>~/miku-wwl</span> / certification-vault</a>
+      <div class="header-actions">
+        <a class="back-link" href="https://miku-wwl.github.io/">← Back to Main Hub</a>
+        <a class="repo-link" href="https://github.com/miku-wwl/certification-vault" target="_blank" rel="noreferrer">repo ↗</a>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle color theme" aria-pressed="false">◐ theme</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="site-shell">
+    <section class="hero">
+      <div><p class="eyebrow">~/certification-vault $ tree --links</p><h1>Certification Vault</h1><p class="lede">Verified cloud, Kubernetes, and platform engineering credentials, with room to add future badges and learning milestones.</p></div>
+      <aside class="signal-board" aria-label="Certification vault status"><div class="signal-row"><span>route</span><strong>/certification-vault/</strong></div><div class="signal-row"><span>signal</span><strong class="live" data-live-status>online</strong></div><div class="signal-row"><span>records</span><strong>5 verified</strong></div></aside>
+    </section>
+
+    <section class="window" aria-labelledby="vault-title">
+      <div class="window-bar"><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span><span>credentials/index</span></div>
+      <div class="window-body">
+        <div class="section-heading"><div><p class="eyebrow">/verified-records</p><h2 id="vault-title">Credential nodes</h2></div><p>select a record to open its issuer</p></div>
+        <div class="award"><strong>★ Linux Foundation LiFT Scholar</strong><p>A recognition checkpoint kept alongside the technical credentials.</p></div>
+        <div class="vault-grid">
+          <a class="credential" href="https://learn.microsoft.com/en-us/users/weilaiwang-7477/credentials/3b9265225e0641d" target="_blank" rel="noreferrer"><img src="./certifications/azure-solutions-architect-expert.png" alt="" loading="lazy"><span><strong>Microsoft Certified: Azure Solutions Architect Expert</strong><span class="issuer">Microsoft Learn</span></span><span class="credential-arrow" aria-hidden="true">→</span></a>
+          <a class="credential" href="https://www.credly.com/badges/00a8748b-01ea-41bf-bb21-54fa628be79e/linked_in_profile" target="_blank" rel="noreferrer"><img src="./certifications/aws-solutions-architect-professional.png" alt="" loading="lazy"><span><strong>AWS Certified Solutions Architect – Professional</strong><span class="issuer">Amazon Web Services</span></span><span class="credential-arrow" aria-hidden="true">→</span></a>
+          <a class="credential" href="https://learn.microsoft.com/en-us/users/weilaiwang-7477/credentials/5d434fa19a5220b7" target="_blank" rel="noreferrer"><img src="./certifications/azure-administrator-associate.png" alt="" loading="lazy"><span><strong>Microsoft Certified: Azure Administrator Associate</strong><span class="issuer">Microsoft Learn</span></span><span class="credential-arrow" aria-hidden="true">→</span></a>
+          <a class="credential" href="https://www.credly.com/badges/2dfaf594-6b11-4d74-bee7-d3d1dfd30a78/public_url" target="_blank" rel="noreferrer"><img src="./certifications/aws-developer-associate.png" alt="" loading="lazy"><span><strong>AWS Certified Developer – Associate</strong><span class="issuer">Amazon Web Services</span></span><span class="credential-arrow" aria-hidden="true">→</span></a>
+          <a class="credential" href="https://www.credly.com/badges/05fc9907-a20d-4bfe-b341-f8ca8e81b5a0/public_url" target="_blank" rel="noreferrer"><img src="./certifications/ckad.png" alt="" loading="lazy"><span><strong>Certified Kubernetes Application Developer</strong><span class="issuer">The Linux Foundation / CNCF</span></span><span class="credential-arrow" aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="site-shell footer-inner"><p>❯ echo "credential vault indexed"</p><p>Independent GitHub Pages module · <a href="https://github.com/miku-wwl/certification-vault">source</a></p></div></footer>
+  <script src="./site.js"></script>
+</body>
+</html>
