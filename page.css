@@ -10,6 +10,8 @@
 .vault-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.7rem; }
 .credential { display: grid; grid-template-columns: 58px minmax(0, 1fr) auto; align-items: center; gap: 0.8rem; min-height: 92px; padding: 0.72rem; border: 1px solid var(--border); border-radius: var(--radius); background: rgba(5, 18, 29, 0.78); color: var(--text); text-decoration: none; transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease; }
 .credential:hover { color: var(--text); text-decoration: none; border-color: var(--violet); box-shadow: 0 0 0 1px var(--violet), 0 14px 30px var(--violet-soft); transform: translateY(-3px); }
+.credential-new { border-color: rgba(179, 109, 255, 0.52); background: linear-gradient(110deg, rgba(179, 109, 255, 0.12), rgba(5, 18, 29, 0.82) 58%); }
+.credential-new:hover { border-color: var(--violet); }
 .credential img { width: 58px; height: 58px; object-fit: contain; border-radius: 9px; background: var(--surface-2); }
 .credential strong, .learning-track strong { display: block; line-height: 1.3; font-family: var(--mono); font-size: 0.78rem; }
 .issuer { display: block; margin-top: 0.28rem; color: var(--muted); font: 0.65rem var(--mono); }
